@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <h2>Bienvenido, @Usuario!</h2>
+    <button onclick="marcarAsistencia()">Marcar Asistencia</button><br><br>
+    <button onclick="verHistorial()">Ver historial de asistencia</button><br><br>
+    <button onclick="cerrarSession()">Cerrar Sesión</button>
+
+    <script>
+        function marcarAsistencia() {
+            alert("Asistencia marcada con éxito.");
+        }
+
+        function verHistorial() {
+            alert("En progreso.")
+        }
+
+        function cerrarSession() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Iniciar sesión</h2>
+    <form onsubmit="login(event)">
+        <label>Usuario:</label><br>
+        <input type="text" id="username" required><br><br>
+        <label>Contraseña:</label><br>
+        <input type="password" id="password" required><br><br>
+        <button type="submit">Ingresar</button>
+    </form>
+
+    <script>
+        function login(e){
+            e.preventDefault();
+            const user = document.getElementById("username").value;
+            const pass = document.getElementById("password").value;
+
+            if (user === "admin" && pass === "ejemplo") {
+                window.location.href = "admin.html";
+            } else if (user === "usuario" && pass === "1234") {
+                window.location.href = "main.html";
+            } else{
+                alert("Usuario o contraseña incorrectas.")
+            }
+        }
+    </script>
+</body>
+</html>
